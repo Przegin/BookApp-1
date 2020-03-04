@@ -12,20 +12,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <script src="${pageContext.request.contextPath}/resources/js/jsfile.js"></script>
-<title><s:message code="menu.mainPage"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
     <body>
     <%@include file="/WEB-INF/incl/menu.app" %>
 
-        <form id="searchForm" align="center" action="/books/1/title/asc?search=${search}" method="GET">
-            <br>
+        <form id="searchForm" align="center" action="/books/1/title/asc?search=${search}" method="GET" style="margin:20px">
                 <label for="search">Wyszukaj: </label>
-                <input type="text" id="search" name="search">
+                <input type="text" id="search" name="search" style="width:500px;">
                 <input type="submit" value="Szukaj"/>
-            <br>
         </form>
 
-        <table border="5F0F40" cellpadding="6" cellspacing="2" align="center">
+        <br>
+
+        <table cellpadding="6" cellspacing="2" align="center" style="backdrop-filter: blur(2px) brightness(90%); box-shadow: 0px 0px 10px 0px #242424; padding:20px">
             <tr>
 
                 <td width="90" align="center">
@@ -129,12 +129,12 @@
                         <c:choose>
                             <c:when test="${rate > 0}">
                                 <a href="/addrate/1/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/1/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -142,12 +142,12 @@
                         <c:choose>
                             <c:when test="${rate > 1}">
                                 <a href="/addrate/2/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/2/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -155,12 +155,12 @@
                         <c:choose>
                             <c:when test="${rate > 2}">
                                 <a href="/addrate/3/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/3/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -168,12 +168,12 @@
                         <c:choose>
                             <c:when test="${rate > 3}">
                                 <a href="/addrate/4/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/4/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -181,12 +181,12 @@
                         <c:choose>
                             <c:when test="${rate > 4}">
                                 <a href="/addrate/5/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/5/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -194,12 +194,12 @@
                         <c:choose>
                             <c:when test="${rate > 5}">
                                 <a href="/addrate/6/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/6/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -207,12 +207,12 @@
                         <c:choose>
                             <c:when test="${rate > 6}">
                                 <a href="/addrate/7/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/7/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -220,12 +220,12 @@
                         <c:choose>
                             <c:when test="${rate > 7}">
                                 <a href="/addrate/8/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/8/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -233,12 +233,12 @@
                         <c:choose>
                             <c:when test="${rate > 8}">
                                 <a href="/addrate/9/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/9/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -246,12 +246,12 @@
                         <c:choose>
                             <c:when test="${rate > 9}">
                                 <a href="/addrate/10/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillElixir.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/addrate/10/book/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Elixir.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -262,12 +262,12 @@
                         <c:choose>
                             <c:when test="${isFavorite == true}">
                                 <a href="/favorite/${book.id}/books/${currentPage}/${sort}/${order}?search=${search}" >
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillHeart.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/favorite/${book.id}/books/${currentPage}/${sort}/${order}?search=${search}" >
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Heart.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
@@ -278,18 +278,18 @@
                         <c:choose>
                             <c:when test="${isToRead == true}">
                                 <a href="/toread/${book.id}/books/${currentPage}/${sort}/${order}?search=${search}" >
-                                <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+                                <img src="/resources/images/fillDiamond.png" width="20" height="20"/>
                                 </a>
                             </c:when>
                             <c:otherwise>
                                 <a href="/toread/${book.id}/books/${currentPage}/${sort}/${order}?search=${search}" >
-                                <img src="/resources/images/Star.jpg" width="20" height="20"/>
+                                <img src="/resources/images/Diamond.png" width="20" height="20"/>
                                 </a>
                             </c:otherwise>
                         </c:choose>
                     </td>
 
-                    <td align="center">
+                    <td align="center" style="color:white; text-shadow: 1px 1px 2px black, 0 0 25px #CC00FF, 0 0 5px #8600A8">
                         <c:set var="avrate" value="${book.avrate }"/>
                         <c:choose>
                             <c:when test="${avrate == 0}">
@@ -304,6 +304,9 @@
                 </tr>
             </c:forEach>
         </table>
+
+        <br>
+        <br>
 
         <table width="1000" border="0" cellpadding="6" cellspacing="0">
             <tr>

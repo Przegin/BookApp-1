@@ -8,11 +8,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title><s:message code="menu.adminPage"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>
-<h1><s:message code="menu.adminPage"/></h1>
+<h1 align="center"><s:message code="menu.adminPage"/></h1>
 <p align="center">
     <c:out value="${message }" />									<!-- tag c do wyświetlania zawartości tego co wraca z kontrolera, out to jedno z poleceń zawartych w jstl core -->
 </p>

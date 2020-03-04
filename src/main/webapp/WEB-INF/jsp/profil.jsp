@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title><s:message code="profil.userDane"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>
@@ -47,13 +47,13 @@
 
 <table align="center">
 	<tr>
-		<td colspan="2" align="center" bgcolor="#fff">
-			<input type="button" value="<s:message code="button.edycjaProfilu"/>" 
+		<td colspan="2" align="center" style="background-color:transparent">
+			<input type="button" value="<s:message code="button.edycjaProfilu"/>" class="formbutton"
 					onclick="window.location.href='${pageContext.request.contextPath}/editprofile'"/>
 		</td>
 	
-		<td colspan="2" align="center" bgcolor="#fff">
-			<input type="button" value="<s:message code="button.zmianaHasla"/>" 
+		<td colspan="2" align="center" style="background-color:transparent">
+			<input type="button" value="<s:message code="button.zmianaHasla"/>" class="formbutton"
 					onclick="window.location.href='${pageContext.request.contextPath}/editpassword'"/>
 		</td>
 	</tr>

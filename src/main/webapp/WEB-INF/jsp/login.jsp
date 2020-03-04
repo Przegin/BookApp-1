@@ -11,13 +11,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <script src="${pageContext.request.contextPath}/resources/js/jsfile.js"></script>
-<title><s:message code="logowanie.pageName" /></title>
+<title><s:message code="menu.name" /></title>
 </head>
 <body>
 	<%@include file="/WEB-INF/incl/menu.app"%>
-	<h2>
-		<s:message code="logowanie.pageName" />
-	</h2>
+
 
 	<form id="loginForm" action="/login" method="POST">			<!-- formularz logowania, akcja login dla spring securityconfig, odczyta to i app.properties, kontroler też ma login -->
 
@@ -36,8 +34,7 @@
 					<s:message code="register.email" />
 				</td>
 				<td align="left">
-					<input type="text" name="email" id="email"
-					size="30" />
+					<input type="text" name="email" id="email" size="28"/>
 					<div id="emailValidation"></div>
 				</td>
 			</tr>
@@ -46,14 +43,14 @@
 					<s:message code="register.password" />
 				</td>
 				<td align="left">
-					<input type="password" name="password" id="password" size="30" />
+					<input type="password" name="password" id="password" size="28"/>
 					<div id="passwordValidation"></div>
 				</td>
 			</tr>
 
 			<tr>
-				<td colspan="2" align="center" bgcolor="#ffffff"><input
-					type="submit" onclick="return loginValidate()" value="Zaloguj"/></td>			<!-- wywołanie walidacji js -->
+				<td colspan="2" align="center" style="background-color: transparent;">
+				<input type="submit" onclick="return loginValidate()" value="<s:message code="button.login"/>" class="formbutton"/></td>			<!-- wywołanie walidacji js -->
 			</tr>
 
 		</table>

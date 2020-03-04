@@ -9,15 +9,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title><s:message code="menu.mainPage"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>		
 
 
 
-<table border="5F0F40" cellpadding="6" cellspacing="2" align="center">
-	<tr>
+<table cellpadding="6" cellspacing="2" align="center" style="backdrop-filter: blur(2px) brightness(90%); box-shadow: 0px 0px 10px 0px #242424; padding:20px">
+	<tr style="margin:20px">
 
 		<td width="70" align="center">
 			<b><s:message code="book.title"/></b>
@@ -53,12 +53,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 0}">
 					<a href="/addrate/1/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/1/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -66,12 +66,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 1}">
 					<a href="/addrate/2/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/2/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -79,12 +79,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 2}">
 					<a href="/addrate/3/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/3/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -92,12 +92,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 3}">
 					<a href="/addrate/4/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/4/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -105,12 +105,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 4}">
 					<a href="/addrate/5/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/5/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -118,12 +118,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 5}">
 					<a href="/addrate/6/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/6/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -131,12 +131,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 6}">
 					<a href="/addrate/7/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/7/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -144,12 +144,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 7}">
 					<a href="/addrate/8/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/8/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -157,12 +157,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 8}">
 					<a href="/addrate/9/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/9/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -170,12 +170,12 @@
 			<c:choose>
 				<c:when test="${rateVal > 9}">
 					<a href="/addrate/10/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+					<img src="/resources/images/fillElixir.png" width="20" height="20"/>
 					</a>
 				</c:when>
 				<c:otherwise>
 					<a href="/addrate/10/rate/${rate.bookid }/${currentPage}/${sort}/${order}?search=">
-					<img src="/resources/images/Star.jpg" width="20" height="20"/>
+					<img src="/resources/images/Elixir.png" width="20" height="20"/>
 					</a>
 				</c:otherwise>
 			</c:choose>
@@ -183,6 +183,9 @@
 		</tr>
 	</c:forEach>
 </table>
+
+<br>
+<br>
 
 <table width="1000" border="0" cellpadding="6" cellspacing="0">
 	<tr>
@@ -232,10 +235,6 @@
 		</td>
 	</tr>
 </table>
-
-<a href="/ranking">
-	<input type="button" value="<s:message code="button.pdf"/>" class="formbutton" />
-</a>
 
 </body>
 </html>

@@ -10,30 +10,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jsfile.js"></script>
-<title><s:message code="menu.mainPage"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>		<!-- apka do main i src nie ma dostępu z poziomu przeglądarki, tomcat przy kompilacji jeszcze ma dostęp do webinf -->
 
-<sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-<h2 align="center">Witaj, zaloguj się i oceń kilka kryminałów!:></h2>
-</sec:authorize>
-
-<sec:authorize access="hasRole('ROLE_USER')">
-<h2 align="center">Rozpocznij ocenianie i przegląd swojej listy ocen</h2>
-</sec:authorize>
+<img align="right" src="/resources/images/logo.png"/>
 
 <img src="/resources/images/book2.png"/>
-
-
-<sec:authorize access="hasRole('ROLE_USER')">
-<h2 align="center">Przycisk nadal aktualny</h2>
-<input type="submit" onclick="return doSomeWork()" value="KLIKNIJ JEŚLI NIE JESTEŚ PRZEKONANY"/>
-</sec:authorize>
-
-<sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-<input type="submit" onclick="return doSomeWork()" value="KLIKNIJ JEŚLI NIE JESTEŚ PRZEKONANY"/>
-</sec:authorize>
 
 </body>
 </html>

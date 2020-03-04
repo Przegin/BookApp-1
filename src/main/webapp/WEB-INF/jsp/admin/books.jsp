@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <script src="${pageContext.request.contextPath}/resources/js/jsfile.js"></script>
-<title><s:message code="menu.mainPage"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
     <body>
     <%@include file="/WEB-INF/incl/menu.app" %>
@@ -21,15 +21,17 @@
             <c:out value="${message }" />
         </p>
 
-        <form id="searchForm" align="center" action="/admin/books/1/title/asc?search=${search}" method="GET">
-            <br>
+        <h2 align="center"><s:message code="admin.ksiazki"/></h2>
+
+        <form id="searchForm" align="center" action="/admin/books/1/title/asc?search=${search}" method="GET" style="margin:20px;">
                 <label for="searhhtext">Wyszukaj: </label>
-                <input type="text" id="search" name="search">
+                <input type="text" id="search" width="500" name="search" style="width:500px;">
                 <input type="submit" value="Szukaj"/>
-            <br>
         </form>
 
-        <table border="5F0F40" cellpadding="6" cellspacing="2" align="center">
+        <br>
+
+        <table cellpadding="6" cellspacing="2" align="center" style="backdrop-filter: blur(2px) brightness(90%); box-shadow: 0px 0px 10px 0px #242424;">
             <tr>
 
                 <td width="90" align="center">
@@ -106,13 +108,16 @@
 
                     <td width="50" align="center">
                         <a href="/deletebook/${book.id }/${currentPage}/${sort}/${order}?search=${search}">
-                            <img src="/resources/images/userdelete.jpg" width="16" height="16"/>
+                            <img src="/resources/images/userdelete.png" width="16" height="16"/>
                         </a>
                     </td>
 
                 </tr>
             </c:forEach>
         </table>
+
+        <br>
+        <br>
 
         <table width="1000" border="0" cellpadding="6" cellspacing="0">
             <tr>

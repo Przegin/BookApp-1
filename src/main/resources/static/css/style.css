@@ -4,10 +4,15 @@ body {
 	font-family: sans-serif;
 	font-weight: normal;
 	font-size: 14px;
-	color: #000000;
+	color: #540B0E;
+    background-image: url("../images/bcg.bmp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat
 	background-color: #ffffff;
 	margin-left: auto; 
-	margin-right : auto;
+	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 1300px;
@@ -26,7 +31,7 @@ form {
 }
 
 h2 {
-	color: #9A031E;
+	color: #540B0E;
 	font-weight: bold;
 }
 
@@ -34,7 +39,7 @@ a {
 	font-size: 14px;
 	font-family: sans-serif;
 	font-weight: bold;
-	color: #E36414;
+	color: #540B0E;
 	text-decoration: none;
 }
 
@@ -42,14 +47,14 @@ a:hover {
 	font-size: 14px;
 	font-family: sans-serif;
 	font-weight: bold;
-	color: #FB8B24;
+	color: #ff0000;
 	text-decoration: underline;
 }
 
 .formbutton {
     background-color: white;
     border: 1px solid black;
-    color: #005984;
+    color: #540B0E;
     padding: 10px 10px;
     text-decoration: none;
     margin: 4px 2px;

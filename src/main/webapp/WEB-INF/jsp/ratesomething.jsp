@@ -10,7 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
         <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jsfile.js"></script>
-        <title><s:message code="menu.mainPage"/></title>
+        <title><s:message code="menu.name"/></title>
     </head>
     <body>
         <h2 align="center">Oceń kilka książek aby otrzmać rekomendacje</h2>

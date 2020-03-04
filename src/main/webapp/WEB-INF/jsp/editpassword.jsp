@@ -38,9 +38,9 @@
 			</tr>
 			
 			<tr>
-				<td colspan="2" align="center" bgcolor="#fff">
-					<input type="submit" value="<s:message code="button.zmianaHasla"/>" />
-					<input type="button" value="<s:message code="button.cancel"/>" 
+				<td colspan="2" align="center">
+					<input type="submit" value="<s:message code="button.zmianaHasla"/>" class="formbutton" />
+					<input type="button" value="<s:message code="button.cancel"/>" class="formbutton"
 						onclick="window.location.href='${pageContext.request.contextPath}/profil'"/>
 				</td>
 			</tr>

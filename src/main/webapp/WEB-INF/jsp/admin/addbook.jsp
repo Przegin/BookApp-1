@@ -10,12 +10,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title><s:message code="menu.register"/></title>								<!-- rejestracja, wyświetlanie na stronie inf -->
+<title><s:message code="menu.name"/></title>								<!-- rejestracja, wyświetlanie na stronie inf -->
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>								<!-- menu importjemy do każdej strony, razem z tagami -->
 
-<h2><s:message code="menu.register"/></h2>
+<h2 align="center"><s:message code="button.add"/></h2>
 
 <p align="center">
 		<c:out value="${message }" />									<!-- tag c do wyświetlania zawartości tego co wraca z kontrolera, out to jedno z poleceń zawartych w jstl core -->
@@ -24,7 +24,7 @@
 	<sf:form id="booksForm" action="addnewbook" modelAttribute="book"
 		enctype="multipart/form-data" method="POST">					<!-- sf, tagi forlmularzy springowych-->
 																		<!-- akcje dla formularza, modelAtribute - przekazuje na jakim modelu formularza pracujemy - user -->
-		<table width="500" border="0" cellpadding="4" cellspacing="1"
+		<table width="500" border="0" cellpadding="4" cellspacing="1" style="backdrop-filter: blur(2px) brightness(90%); box-shadow: 0px 0px 10px 0px #242424; padding:20px"
 			align="center">
 
 			<tr>
@@ -205,7 +205,7 @@
 			</tr>
 
 			<tr>
-				<td colspan="2" align="center" bgcolor="#fff">
+				<td colspan="2" align="center" style="background-color:transparent">
 					<input type="submit" value="<s:message code="button.add"/>" class="formbutton"/>			<!-- przyciski do akcji, u nas będą umieszczane w kontrolerze -->
 					<input type="button" value="<s:message code="button.cancel"/>" class="formbutton" 
 						onclick="window.location.href='${pageContext.request.contextPath}/'"/>						<!-- przekierowanie do str głównej op cancel -->
@@ -215,6 +215,9 @@
 		</table>
 
 	</sf:form>
+
+<br>
+<br>
 
 </body>
 </html>

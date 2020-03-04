@@ -10,12 +10,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title><s:message code="menu.register"/></title>								<!-- rejestracja, wyświetlanie na stronie inf -->
+<title><s:message code="menu.name"/></title>								<!-- rejestracja, wyświetlanie na stronie inf -->
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>								<!-- menu importjemy do każdej strony, razem z tagami -->
-
-<h2><s:message code="menu.register"/></h2>
 
 <p align="center">
 		<c:out value="${message }" />									<!-- tag c do wyświetlania zawartości tego co wraca z kontrolera, out to jedno z poleceń zawartych w jstl core -->
@@ -29,7 +27,7 @@
 
 			<tr>
 				<td width="130" align="right" ><s:message code="register.name"/></td>
-				<td width="270" align="left"><sf:input path="name" id="name" name="name"			
+				<td width="270" align="left"><sf:input path="name" id="name" name="name"
 						size="28"  /></td>							<!-- name odpowiada temu, co mamy w klasie user itd -->
 			</tr>
 			<tr>
@@ -63,7 +61,7 @@
 			</tr>
 
 			<tr>
-				<td colspan="2" align="center" bgcolor="#fff">
+				<td colspan="2" align="center" style="background-color: transparent;">
 					<input type="submit" value="<s:message code="button.register"/>" class="formbutton"/>			<!-- przyciski do akcji, u nas będą umieszczane w kontrolerze -->
 					<input type="button" value="<s:message code="button.cancel"/>" class="formbutton" 
 						onclick="window.location.href='${pageContext.request.contextPath}/'"/>						<!-- przekierowanie do str głównej op cancel -->

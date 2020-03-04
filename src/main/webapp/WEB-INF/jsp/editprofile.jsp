@@ -9,7 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
-<title><s:message code="profilEdit.pageName"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
 <body>
 <body>
@@ -53,9 +53,9 @@
 			</tr>
 
 			<tr>
-				<td colspan="2" align="center" bgcolor="#fff">
-					<input type="submit" value="<s:message code="button.save"/>" />
-					<input type="button" value="<s:message code="button.cancel"/>" 
+				<td colspan="2" align="center" style="background-color:transparent">
+					<input type="submit" value="<s:message code="button.save"/>" class="formbutton" />
+					<input type="button" value="<s:message code="button.cancel"/>"  class="formbutton"
 						onclick="window.location.href='${pageContext.request.contextPath}/'"/>
 				</td>
 			</tr>

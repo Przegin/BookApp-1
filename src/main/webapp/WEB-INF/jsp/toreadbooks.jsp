@@ -10,13 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
 <script src="${pageContext.request.contextPath}/resources/js/jsfile.js"></script>
-<title><s:message code="menu.mainPage"/></title>
+<title><s:message code="menu.name"/></title>
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>
 
 
-<table border="5F0F40" cellpadding="6" cellspacing="2" align="center">
+<table cellpadding="6" cellspacing="2" align="center" style="backdrop-filter: blur(2px) brightness(90%); box-shadow: 0px 0px 10px 0px #242424; padding:20px">
 <tr>
 <td width="90" align="center"><b><s:message code="book.cover"/></b></td>
 
@@ -79,12 +79,12 @@
     <c:choose>
         <c:when test="${isToRead == true}">
             <a href="/toread/${book.id}/tread/${currentPage}/${sort}/${order}?search=" >
-            <img src="/resources/images/fillStar.jpg" width="20" height="20"/>
+            <img src="/resources/images/fillDiamond.png" width="20" height="20"/>
             </a>
         </c:when>
         <c:otherwise>
             <a href="/toread/${book.id}/tread/${currentPage}/${sort}/${order}?search=" >
-            <img src="/resources/images/Star.jpg" width="20" height="20"/>
+            <img src="/resources/images/Diamond.png" width="20" height="20"/>
             </a>
         </c:otherwise>
     </c:choose>
@@ -92,6 +92,9 @@
     </tr>
 </c:forEach>
 </table>
+
+<br>
+<br>
 
 <table width="1000" border="0" cellpadding="6" cellspacing="0">
     <tr>

@@ -1,6 +1,6 @@
-<table width="100%" border="0" cellpadding="4" class="tableMenuBG" bgcolor="#5F0F40">
+<table width="100%" border="0" cellpadding="7" class="tableMenuBG" style="margin-bottom:20px; padding-left:10%; padding-right:7%">
 	<tr>
-		<td align="left" width="900">
+		<td width="900">
 			<a href="/"><s:message code="menu.mainPage"/></a>&nbsp;
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
 				<a href="/admin"><s:message code="menu.adminPage"/></a>
@@ -15,7 +15,7 @@
 			</sec:authorize>
 		</td>
 				
-		<td align="right">
+		<td align="right" style="background-color: transparent;">
 		<sec:authorize access="hasRole('ROLE_ANONYMOUS')">
 			<a href="/login"><s:message code="menu.login"/></a>&nbsp;
 			<a href="/register"><s:message code="menu.register"/></a>&nbsp;
