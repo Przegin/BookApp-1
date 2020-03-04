@@ -9,7 +9,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "role")				//pokazujemy Hibernatowi tablicę i wskazujemy nazwę
+@Table(name = "role")
 public class Role {
 
 	@Id
@@ -20,8 +20,7 @@ public class Role {
 	@Column(name = "role")
 	@NotNull
 	private String role;
-	
-	
+
 	public int getId() {
 		return id;
 	}
@@ -34,7 +33,4 @@ public class Role {
 	public void setRole(String role) {
 		this.role = role;
 	}
-	
-	
-	
 }

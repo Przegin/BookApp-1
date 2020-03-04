@@ -17,17 +17,17 @@ import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 
 
-@Entity                                                    //podajemy, że jest to encja
-@Table(name = "user")                                    //jakiej kolumny w bazie encja dotyczy
-public class User {                                        //modyfikacja, zapisywanie, pobieranie danych, nie logowanie
+@Entity
+@Table(name = "user")
+public class User {
 
-    @Id                                                    //składowe muszą odpowiadać temu, co jest w tablicy w bazie
-    @GeneratedValue(strategy = GenerationType.AUTO)        //generowanie aut., bo to klucz główny
-    @Column(name = "userid")                            //jakiej kolumny dotyczy, dla każdego pola
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "userid")
     private int id;
 
     @Column(name = "email")
-    @NotNull                                            //określenie, że nie może być puste pole
+    @NotNull
     private String email;
 
     @Column(name = "password")
@@ -47,12 +47,10 @@ public class User {                                        //modyfikacja, zapisy
     private int active;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    //ustawiamy tablicę, która zbiera z dwóch, user i role, żeby odczytać rolę użytnkownika
     @JoinTable(name = "userrole", joinColumns = @JoinColumn(name = "userid"), inverseJoinColumns = @JoinColumn(name = "roleid"))
     private Set<Role> roles;
 
     @Transient
-    //przy update/insert pomijana przez Hibernate, gdy nie ma takiego pola w bazie
     private String operacja;
 
     @Transient

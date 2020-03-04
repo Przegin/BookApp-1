@@ -9,11 +9,11 @@ public class ErrorPageController implements ErrorController {
 
 	@Override
 	public String getErrorPath() {
-		return "/error";					//przykrywa każdą stronę z errorem właśnie tym
+		return "/error";
 	}
 
-	@GetMapping(value = "/error")			//obsługa tego wywołania
-	public String showErrorPage() {			//łapie wywołanie "/error" i zwraca moją stronę error jsp
+	@GetMapping(value = "/error")
+	public String showErrorPage() {
 		return "error";
 	}
 	

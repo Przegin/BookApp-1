@@ -23,7 +23,7 @@
 <sf:form id="usersForm" action="updatepass" modelAttribute="user"
 		enctype="multipart/form-data" method="POST">
 
-		<sf:hidden path="email"/>						<!-- ukryte pole nazwy użyt - maila, pole do odebrania i przekaznia do Query jako param -->
+		<sf:hidden path="email"/>
 		
 		<table width="500" border="0" cellpadding="4" cellspacing="1"
 			align="center">
@@ -34,7 +34,7 @@
 			</tr>
 			
 			<tr>
-				<td colspan="2" align="center"><font color="red"><sf:errors path="newPassword"/></font></td>			<!-- error do wyświetlania który wróci z validatora -->
+				<td colspan="2" align="center"><font color="red"><sf:errors path="newPassword"/></font></td>
 			</tr>
 			
 			<tr>

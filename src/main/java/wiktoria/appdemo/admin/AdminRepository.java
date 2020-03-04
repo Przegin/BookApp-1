@@ -13,13 +13,11 @@ public interface AdminRepository extends JpaRepository<User, Integer>  {
 	
 	User findUserById(int id);
 	
-	@Modifying																					//nie nadpisywanie tylko niszczenie danych
-	@Query(value = "DELETE FROM userrole WHERE userid = :id", nativeQuery = true)				//najpierw usuwamy relacje miedzy rolą a userem, nativequery bo ma być od razu do hibernata bez tlumaczenia itd
+	@Modifying
+	@Query(value = "DELETE FROM userrole WHERE userid = :id", nativeQuery = true)
 	void deleteUserFromUserrole(@Param("id") int id);
 	
 	@Modifying																					
-	@Query(value = "DELETE FROM user WHERE userid = :id", nativeQuery = true)					//usuwanie juz z tablicy
+	@Query(value = "DELETE FROM user WHERE userid = :id", nativeQuery = true)
 	void deleteUserFromUser(@Param("id") int id);
-	
-
 }

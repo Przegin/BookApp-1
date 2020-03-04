@@ -20,7 +20,7 @@
 <sf:form id="usersForm" action="updateprofil" modelAttribute="user"
 		enctype="multipart/form-data" method="POST">
 		
-		<sf:hidden path="id"/>							<!-- pole ukryte bo zmieniamy emaila, id potrzebne do uaktualnienia właściwego rekordu -->
+		<sf:hidden path="id"/>
 
 		<table width="500" border="0" cellpadding="4" cellspacing="1"
 			align="center">

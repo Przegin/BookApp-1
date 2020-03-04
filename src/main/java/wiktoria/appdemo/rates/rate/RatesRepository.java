@@ -18,7 +18,6 @@ public interface RatesRepository extends JpaRepository<Rate, Integer> {
 
     @Modifying
     @Query("UPDATE Rate r SET r.value = :value WHERE r.userid= :userid AND r.bookid = :bookid")
-    //w query jest update, który przyjmuje parametry (named query bo mają nazwe)
     void updateRate(@Param("value") int value, @Param("userid") int userid, @Param("bookid") int bookid);
 }
 					

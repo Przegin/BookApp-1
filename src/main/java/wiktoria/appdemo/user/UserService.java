@@ -2,11 +2,11 @@ package wiktoria.appdemo.user;
 
 import java.util.List;
 
-public interface UserService {											//opisuje to, co implementacja może robić dalej, np w klasie dao - zapewniająej dost do bazy
+public interface UserService {
 
-	public User findUserByEmail(String email);							//odnajdywanie usera po mailu
-	public void saveUser(User user);									//zapis usera
-	public void updateUserPassword(String newPassword, String email);	//zmiana hasła
-	public void updateUserProfile(String newName, String newLastname, String newEmail, int id);		//update danych profilu
+	public User findUserByEmail(String email);
+	public void saveUser(User user);
+	public void updateUserPassword(String newPassword, String email);
+	public void updateUserProfile(String newName, String newLastname, String newEmail, int id);
 	public List<User> findAll();
 }

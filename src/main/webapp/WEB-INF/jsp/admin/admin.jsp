@@ -14,7 +14,7 @@
 <%@include file="/WEB-INF/incl/menu.app" %>
 <h1 align="center"><s:message code="menu.adminPage"/></h1>
 <p align="center">
-    <c:out value="${message }" />									<!-- tag c do wyświetlania zawartości tego co wraca z kontrolera, out to jedno z poleceń zawartych w jstl core -->
+    <c:out value="${message }" />
 </p>
 <%@include file="/WEB-INF/incl/admenu.app" %>
 </body>

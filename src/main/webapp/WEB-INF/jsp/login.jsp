@@ -17,14 +17,14 @@
 	<%@include file="/WEB-INF/incl/menu.app"%>
 
 
-	<form id="loginForm" action="/login" method="POST">			<!-- formularz logowania, akcja login dla spring securityconfig, odczyta to i app.properties, kontroler też ma login -->
+	<form id="loginForm" action="/login" method="POST">
 
 		<table width="350" border="0" cellpadding="4" cellspacing="1"
 			align="center">
 
 			<tr>
 				<td colspan="2" align="center">
-					<c:if test="${not empty param.error}">		<!-- jesli param.error spring zwróci niepusty to message będzie wyświetlone -->
+					<c:if test="${not empty param.error}">
 						<font color="red"><s:message code="error.logowanie"/></font>
 					</c:if>
 				</td>
@@ -50,7 +50,7 @@
 
 			<tr>
 				<td colspan="2" align="center" style="background-color: transparent;">
-				<input type="submit" onclick="return loginValidate()" value="<s:message code="button.login"/>" class="formbutton"/></td>			<!-- wywołanie walidacji js -->
+				<input type="submit" onclick="return loginValidate()" value="<s:message code="button.login"/>" class="formbutton"/></td>
 			</tr>
 
 		</table>

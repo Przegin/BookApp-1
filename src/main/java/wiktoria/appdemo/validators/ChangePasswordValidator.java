@@ -17,15 +17,14 @@ public class ChangePasswordValidator implements Validator{
 
 	@Override
 	public void validate(Object obj, Errors errors) {
-		
+
 		@SuppressWarnings("unused")
 		User u = (User) obj;
-		
-		ValidationUtils.rejectIfEmpty(errors, "newPassword", "error.userPassword.empty");			//gdy pole jest puste
+		ValidationUtils.rejectIfEmpty(errors, "newPassword", "error.userPassword.empty");
 		
 	}
 	
-	public void checkPasswords(String newPass, Errors errors) {										//metoda sprawdza czy hasło  odpowiada wzorcowi
+	public void checkPasswords(String newPass, Errors errors) {
 		
 		if (!newPass.equals(null)) {
 			boolean isMatch = AppDemoUtils.checkEmailOrPassword(AppDemoConstants.PASSWORD_PATTERN, newPass);

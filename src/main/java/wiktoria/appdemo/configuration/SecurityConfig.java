@@ -16,7 +16,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(securedEnabled = true)						//uaktywnia oznaczenia @Secure
+@EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
@@ -46,7 +46,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/register").permitAll()
 		.antMatchers("/adduser").permitAll()
 		.antMatchers("/activatelink/**").permitAll()
-//		.antMatchers("/admin").hasAuthority("ROLE_ADMIN")				//auth blokuje userowi zwykłemu dostęp
 		.anyRequest().authenticated()
 		.and().csrf().disable()
 		.formLogin()

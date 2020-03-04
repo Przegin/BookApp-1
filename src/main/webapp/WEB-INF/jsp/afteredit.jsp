@@ -17,8 +17,6 @@
 	setTimeout("leave()", 3000);
 </script>
 
-<!-- wymuszone wylogowanie usera bo przy zmianie maila uwierzytelnianie jest zmienione
-	 wygasa sesja, nadpisujemy istniejące dane	-->
 </head>
 <body>
 <%@include file="/WEB-INF/incl/menu.app" %>

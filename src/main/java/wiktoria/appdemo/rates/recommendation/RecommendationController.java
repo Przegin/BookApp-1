@@ -1,6 +1,5 @@
 package wiktoria.appdemo.rates.recommendation;
 
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,8 +39,6 @@ public class RecommendationController {
         this.booksConfigurator = booksConfigurator;
     }
 
-        //    @GetMapping(value = "/similarity12345")
-        //    @Secured(value = {"ROLE_ADMIN"})
     public String countSimilarity() {
         List<Book> allBooks = bookService.findAll();
         List<Similarity> similarityList = new ArrayList<>();

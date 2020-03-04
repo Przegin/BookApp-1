@@ -4,13 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class LoginPageController {			//kontroler, ktory tylko i wyłącznie wyświetla str logowania, samym logowaniem zajmuje się spring sec
+public class LoginPageController {
 
-	@GetMapping(value = {"/login"})			//wyłapuje z url
+	@GetMapping(value = {"/login"})
 	public String showLoginPage() {
-		
+
 		return "login";
 	}
 
-	
+
 }

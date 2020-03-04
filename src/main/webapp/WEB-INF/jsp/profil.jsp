@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="s"  uri="http://www.springframework.org/tags"%>				<!-- importujemy lib tagów do komunikatów -->
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>	<!-- security tags, żeby includowany plik menu.app zadziałał -->
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>					<!-- sterowanie wyświetlania np zawartości tabel, z bazy komunikatów -->
+<%@ taglib prefix="s"  uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -23,7 +23,7 @@
 			<s:message code="register.email"/>
 		</td>
 		<td width="270" align="left">
-			<c:out value="${user.email }"/>			<!-- sięgamy po atrybut -->
+			<c:out value="${user.email }"/>
 		</td>
 	</tr>
 	
